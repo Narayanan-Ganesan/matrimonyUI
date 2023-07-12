@@ -1,1 +1,603 @@
-<p>user-information works!</p>
+<div class="app">
+  <div class="container"></div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-12">
+      <div class="bg-white">
+        <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="faq_tab_1-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#faq_tab_1"
+              type="button"
+              role="tab"
+              aria-controls="faq_tab_1"
+              aria-selected="true"
+            >
+              <div class="d-flex flex-column lh-lg">
+                <span>Personal Details</span>
+              </div>
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="faq_tab_2-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#faq_tab_2"
+              type="button"
+              role="tab"
+              aria-controls="faq_tab_2"
+              aria-selected="false"
+            >
+              <div class="d-flex flex-column lh-lg">
+                <span>Educational & Employement Details</span>
+              </div>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="faq_tab_3-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#faq_tab_3"
+              type="button"
+              role="tab"
+              aria-controls="faq_tab_3"
+              aria-selected="false"
+            >
+              <div class="d-flex flex-column lh-lg">
+                <span>Styles & Habits</span>
+              </div>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="faq_tab_4-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#faq_tab_4"
+              type="button"
+              role="tab"
+              aria-controls="faq_tab_4"
+              aria-selected="false"
+            >
+              <div class="d-flex flex-column lh-lg">
+                <span>Family Details</span>
+              </div>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="faq_tab_5-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#faq_tab_5"
+              type="button"
+              role="tab"
+              aria-controls="faq_tab_5"
+              aria-selected="false"
+            >
+              <div class="d-flex flex-column lh-lg">
+                <span>Contact Information</span>
+              </div>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="faq_tab_6-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#faq_tab_6"
+              type="button"
+              role="tab"
+              aria-controls="faq_tab_6"
+              aria-selected="false"
+            >
+              <div class="d-flex flex-column lh-lg">
+                <span>Expectation</span>
+              </div>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="faq_tab_7-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#faq_tab_7"
+              type="button"
+              role="tab"
+              aria-controls="faq_tab_7"
+              aria-selected="false"
+            >
+              <div class="d-flex flex-column lh-lg">
+                <span>Photo</span>
+              </div>
+            </button>
+          </li>
+        </ul>
+        <!-- First row -->
+        <form [formGroup]="registerForm">
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade active show"
+              id="faq_tab_1"
+              role="tabpanel"
+              aria-labelledby="faq_tab_1-tab"
+            >
+              <div class="container p-3">
+                <div class="row">
+                  <div class="form-group col-md-4">
+                    <div class="p-2">
+                      <label class="fw-bold">Register No</label>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Register No"
+                    />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <div class="p-2">
+                      <label class="fw-bold">First Name</label>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <div class="p-2">
+                      <label class="fw-bold">Fathers Name</label>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Fathers Name"
+                    />
+                  </div>
+                </div>
+
+                <!-- Second Row -->
+
+                <div class="row p-2">
+                  <div class="form-group col-md-4">
+                    <div class="p-2">
+                      <label class="fw-bold">Mother's Name</label>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Mothers Name"
+                    />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <div class="p-2">
+                      <label class="fw-bold">Martial Status</label>
+                    </div>
+                    <select class="form-select" aria-label=".form-select-sm ">
+                      <option value="Unmarried">Unmarried</option>
+                      <option value="Married">Married</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <div class="p-2">
+                      <label class="fw-bold">Gender</label>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Gender"
+                    />
+                  </div>
+                </div>
+
+                <!-- Third Row -->
+
+                <div class="row p-2">
+                  <div class="form-group col-md-4">
+                    <div class="p-2">
+                      <label class="fw-bold">Date Of Birth</label>
+                    </div>
+                    <input type="text" class="form-control" placeholder="DOB" />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <div class="p-2">
+                      <label class="fw-bold">Age</label>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Age" />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <div class="p-2">
+                      <label class="fw-bold">Relgion</label>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Religion"
+                    />
+                  </div>
+                </div>
+
+                <!-- Fourth Row -->
+
+                <div class="row p-2">
+                  <div class="form-group col-md-4">
+                    <div class="p-2">
+                      <label class="fw-bold">Caste</label>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="caste"
+                    />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <div class="p-2">
+                      <label class="fw-bold">Kulam</label>
+                    </div>
+                    <select class="form-select" aria-label=".form-select-sm ">
+                      <option value="Vendoven">Vendoven</option>
+                      <option value="Aanthai">Aanthai</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <div class="p-2">
+                      <label class="fw-bold">Kovil</label>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="kovil"
+                    />
+                  </div>
+                </div>
+                <!-- Fifth Row -->
+
+                <div class="row p-2">
+                  <div class="form-group col-md-4">
+                    <div class="p-2">
+                      <label class="fw-bold">Star</label>
+                    </div>
+                    <select class="form-select" aria-label=".form-select-sm ">
+                      <option value="Mulam">Mulam</option>
+                      <option value="Pusham">Pusham</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <div class="p-2">
+                      <label class="fw-bold">Raasi</label>
+                    </div>
+                    <select class="form-select" aria-label=".form-select-sm ">
+                      <option value="Dhanushu">Dhanushu</option>
+                      <option value="Kaadagam">Kaadagam</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <div class="p-2">
+                      <label class="fw-bold">Type Doctor/Engineer</label>
+                    </div>
+                    <select class="form-select" aria-label=".form-select-sm ">
+                      <option value="Software">Software Enginner</option>
+                      <option value="Doctor">Doctor</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="mt-4 d-flex justify-content-end">
+                  <button
+                    class="nav-link"
+                    id="faq_tab_2-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#faq_tab_2"
+                    type="button"
+                    role="tab"
+                    aria-controls="faq_tab_2"
+                    aria-selected="false"
+                  >
+                    <div class="d-flex flex-column lh-lg">
+                      <span>Next</span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second tab -->
+
+            <div
+              class="tab-pane fade"
+              id="faq_tab_2"
+              role="tabpanel"
+              aria-labelledby="faq_tab_2-tab"
+            >
+              <div class="container p-3 scroll-y">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <div class="p-2">
+                      <label class="fw-bold">Educational Qualification</label>
+                    </div>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <div class="p-2">
+                      <label class="fw-bold">Occupation</label>
+                    </div>
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+
+                <!-- Second Row -->
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <div class="p-2">
+                      <label class="fw-bold">Monthly Income</label>
+                    </div>
+                    <input type="number" class="form-control" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <div class="p-2">
+                      <label class="fw-bold">Work Location</label>
+                    </div>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <!-- Fifth Row -->
+
+                <div class="mt-4 d-flex justify-content-end">
+                  <button
+                    class="btn btn-success custom-button px-5"
+                    data-bs-toggle="tab"
+                    data-bs-target="#faq_tab_2"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third tab -->
+
+            <div
+              class="tab-pane fade"
+              id="faq_tab_3"
+              role="tabpanel"
+              aria-labelledby="faq_tab_3-tab"
+            >
+              <div class="container p-3 scroll-y">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <div class="p-2">
+                      <label class="fw-bold">Height</label>
+                    </div>
+                    <select class="form-select" aria-label=".form-select-sm ">
+                      <option value="5">5ft</option>
+                      <option value="6">6ft</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <div class="p-2">
+                      <label class="fw-bold">Weight in KG's</label>
+                    </div>
+                    <input type="number" class="form-control" placeholder="" />
+                  </div>
+                </div>
+
+                <!-- Second Row -->
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <div class="p-3">
+                      <label class="fw-bold">Complexion</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="Radiooption1"
+                        id="inlineRadio1"
+                        value="option1"
+                      />
+                      <label class="form-check-label" for="inlineRadio1"
+                        >Fair</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="Radiooption1"
+                        id="inlineRadio2"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="inlineRadio2"
+                        >Whiteish</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="Radiooption1"
+                        id="inlineRadio3"
+                        value="option3"
+                      />
+                      <label class="form-check-label" for="inlineRadio3"
+                        >Dark</label
+                      >
+                    </div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <div class="p-2">
+                      <label class="fw-bold">Physical</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="Radiooption2"
+                        id="inlineRadio1"
+                        value="option1"
+                      />
+                      <label class="form-check-label" for="inlineRadio1"
+                        >Slim</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="Radiooption2"
+                        id="inlineRadio2"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="inlineRadio2"
+                        >Average</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="Radiooption2"
+                        id="inlineRadio3"
+                        value="option3"
+                      />
+                      <label class="form-check-label" for="inlineRadio3"
+                        >Well Built</label
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Fifth Row -->
+
+                <div class="mt-4 d-flex justify-content-end">
+                  <button
+                    class="btn btn-success custom-button px-5"
+                    data-bs-toggle="tab"
+                    data-bs-target="#faq_tab_2"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fouth Tab -->
+            <div
+              class="tab-pane fade"
+              id="faq_tab_4"
+              role="tabpanel"
+              aria-labelledby="faq_tab_4-tab"
+            >
+              <div class="container p-3 scroll-y">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <div class="p-2">
+                      <label class="fw-bold">Living Place</label>
+                    </div>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <div class="p-2">
+                      <label class="fw-bold">Current District</label>
+                    </div>
+                    <select class="form-select" aria-label=".form-select-sm ">
+                      <option value="cbe">Coimbatore</option>
+                      <option value="6">Tiruppur</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Second Row -->
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <div class="p-2">
+                      <label class="fw-bold">Sister Details</label>
+                    </div>
+                    <input type="number" class="form-control" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <div class="p-2">
+                      <label class="fw-bold">Brother Details</label>
+                    </div>
+                    <input type="number" class="form-control" />
+                  </div>
+                </div>
+
+                <!-- Third Row -->
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <div class="p-2">
+                      <label class="fw-bold">Total Property Value</label>
+                    </div>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <div class="p-2">
+                      <label class="fw-bold">Home Owned/ Rented</label>
+                    </div>
+                    <select class="form-select" aria-label=".form-select-sm ">
+                      <option value="own">Owned</option>
+                      <option value="rent">Rented</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Fourth Row -->
+                <div class="row">
+                  <div class="form-group">
+                    <div class="p-2">
+                      <label class="fw-bold">Father's Bussiness</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Fifth Row -->
+
+                <div class="row">
+                  <div class="form-group">
+                    <div class="p-3">
+                      <label class="fw-bold"
+                        >About Your Family -Please give a detailed
+                        description</label
+                      >
+
+                      <textarea
+                        class="form-control"
+                        placeholder="Leave your details here"
+                        id="floatingTextarea"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Sixth Row -->
+
+                <div class="mt-4 d-flex justify-content-end">
+                  <button
+                    class="btn btn-success custom-button px-5"
+                    data-bs-toggle="tab"
+                    data-bs-target="#faq_tab_2"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Fifth tab -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
