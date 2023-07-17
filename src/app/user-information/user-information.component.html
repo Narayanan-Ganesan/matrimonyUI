@@ -154,6 +154,7 @@
                       type="text"
                       class="form-control"
                       placeholder="First Name"
+                      formControlName="firstName"
                     />
                   </div>
                   <div class="form-group col-md-4">
@@ -164,6 +165,7 @@
                       type="text"
                       class="form-control"
                       placeholder="Fathers Name"
+                      formControlName="fathersName"
                     />
                   </div>
                 </div>
@@ -179,13 +181,14 @@
                       type="text"
                       class="form-control"
                       placeholder="Mothers Name"
+                      formControlName="mothersName"
                     />
                   </div>
                   <div class="form-group col-md-4">
                     <div class="p-2">
                       <label class="fw-bold">Martial Status</label>
                     </div>
-                    <select class="form-select" aria-label=".form-select-sm ">
+                    <select class="form-select" formControlName="martialStatus">
                       <option value="Unmarried">Unmarried</option>
                       <option value="Married">Married</option>
                     </select>
@@ -198,6 +201,7 @@
                       type="text"
                       class="form-control"
                       placeholder="Gender"
+                      formControlName="gender"
                     />
                   </div>
                 </div>
@@ -209,13 +213,23 @@
                     <div class="p-2">
                       <label class="fw-bold">Date Of Birth</label>
                     </div>
-                    <input type="text" class="form-control" placeholder="DOB" />
+                    <input
+                      type="date"
+                      class="form-control"
+                      placeholder="DOB"
+                      formControlName="dob"
+                    />
                   </div>
                   <div class="form-group col-md-4">
                     <div class="p-2">
                       <label class="fw-bold">Age</label>
                     </div>
-                    <input type="text" class="form-control" placeholder="Age" />
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Age"
+                      formControlName="age"
+                    />
                   </div>
                   <div class="form-group col-md-4">
                     <div class="p-2">
@@ -225,6 +239,7 @@
                       type="text"
                       class="form-control"
                       placeholder="Religion"
+                      formControlName="religion"
                     />
                   </div>
                 </div>
@@ -240,13 +255,14 @@
                       type="text"
                       class="form-control"
                       placeholder="caste"
+                      formControlName="caste"
                     />
                   </div>
                   <div class="form-group col-md-4">
                     <div class="p-2">
                       <label class="fw-bold">Kulam</label>
                     </div>
-                    <select class="form-select" aria-label=".form-select-sm ">
+                    <select class="form-select" formControlName="kulam">
                       <option value="Vendoven">Vendoven</option>
                       <option value="Aanthai">Aanthai</option>
                     </select>
@@ -259,6 +275,7 @@
                       type="text"
                       class="form-control"
                       placeholder="kovil"
+                      formControlName="kovil"
                     />
                   </div>
                 </div>
@@ -269,7 +286,7 @@
                     <div class="p-2">
                       <label class="fw-bold">Star</label>
                     </div>
-                    <select class="form-select" aria-label=".form-select-sm ">
+                    <select class="form-select" formControlName="star">
                       <option value="Mulam">Mulam</option>
                       <option value="Pusham">Pusham</option>
                     </select>
@@ -278,7 +295,7 @@
                     <div class="p-2">
                       <label class="fw-bold">Raasi</label>
                     </div>
-                    <select class="form-select" aria-label=".form-select-sm ">
+                    <select class="form-select" formControlName="horoscope">
                       <option value="Dhanushu">Dhanushu</option>
                       <option value="Kaadagam">Kaadagam</option>
                     </select>
@@ -287,7 +304,7 @@
                     <div class="p-2">
                       <label class="fw-bold">Type Doctor/Engineer</label>
                     </div>
-                    <select class="form-select" aria-label=".form-select-sm ">
+                    <select class="form-select" formControlName="job">
                       <option value="Software">Software Enginner</option>
                       <option value="Doctor">Doctor</option>
                     </select>
@@ -327,13 +344,21 @@
                     <div class="p-2">
                       <label class="fw-bold">Educational Qualification</label>
                     </div>
-                    <input type="text" class="form-control" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="qualification"
+                    />
                   </div>
                   <div class="form-group col-md-6">
                     <div class="p-2">
                       <label class="fw-bold">Occupation</label>
                     </div>
-                    <input type="text" class="form-control" placeholder="" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="occupation"
+                    />
                   </div>
                 </div>
 
@@ -344,13 +369,21 @@
                     <div class="p-2">
                       <label class="fw-bold">Monthly Income</label>
                     </div>
-                    <input type="number" class="form-control" />
+                    <input
+                      type="number"
+                      class="form-control"
+                      formControlName="monthlyincome"
+                    />
                   </div>
                   <div class="form-group col-md-6">
                     <div class="p-2">
                       <label class="fw-bold">Work Location</label>
                     </div>
-                    <input type="text" class="form-control" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="wrkloc"
+                    />
                   </div>
                 </div>
 
@@ -382,7 +415,7 @@
                     <div class="p-2">
                       <label class="fw-bold">Height</label>
                     </div>
-                    <select class="form-select" aria-label=".form-select-sm ">
+                    <select class="form-select" formControlName="height">
                       <option value="5">5ft</option>
                       <option value="6">6ft</option>
                     </select>
@@ -391,7 +424,11 @@
                     <div class="p-2">
                       <label class="fw-bold">Weight in KG's</label>
                     </div>
-                    <input type="number" class="form-control" placeholder="" />
+                    <input
+                      type="number"
+                      class="form-control"
+                      formControlName="weight"
+                    />
                   </div>
                 </div>
 
@@ -406,7 +443,7 @@
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="Radiooption1"
+                        formControlName="complexion"
                         id="inlineRadio1"
                         value="option1"
                       />
@@ -418,7 +455,7 @@
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="Radiooption1"
+                        formControlName="complexion"
                         id="inlineRadio2"
                         value="option2"
                       />
@@ -430,7 +467,7 @@
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="Radiooption1"
+                        formControlName="complexion"
                         id="inlineRadio3"
                         value="option3"
                       />
@@ -447,7 +484,7 @@
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="Radiooption2"
+                        formControlName="physical"
                         id="inlineRadio1"
                         value="option1"
                       />
@@ -459,7 +496,7 @@
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="Radiooption2"
+                        formControlName="physical"
                         id="inlineRadio2"
                         value="option2"
                       />
@@ -471,7 +508,7 @@
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="Radiooption2"
+                        formControlName="physical"
                         id="inlineRadio3"
                         value="option3"
                       />
@@ -509,13 +546,20 @@
                     <div class="p-2">
                       <label class="fw-bold">Living Place</label>
                     </div>
-                    <input type="text" class="form-control" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="livingplace"
+                    />
                   </div>
                   <div class="form-group col-md-6">
                     <div class="p-2">
                       <label class="fw-bold">Current District</label>
                     </div>
-                    <select class="form-select" aria-label=".form-select-sm ">
+                    <select
+                      class="form-select"
+                      formControlName="currentdistrict"
+                    >
                       <option value="cbe">Coimbatore</option>
                       <option value="6">Tiruppur</option>
                     </select>
@@ -529,13 +573,21 @@
                     <div class="p-2">
                       <label class="fw-bold">Sister Details</label>
                     </div>
-                    <input type="number" class="form-control" />
+                    <input
+                      type="number"
+                      class="form-control"
+                      formControlName="sisdetails"
+                    />
                   </div>
                   <div class="form-group col-md-6">
                     <div class="p-2">
                       <label class="fw-bold">Brother Details</label>
                     </div>
-                    <input type="number" class="form-control" />
+                    <input
+                      type="number"
+                      class="form-control"
+                      formControlName="brodetails"
+                    />
                   </div>
                 </div>
 
@@ -546,13 +598,17 @@
                     <div class="p-2">
                       <label class="fw-bold">Total Property Value</label>
                     </div>
-                    <input type="text" class="form-control" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="propertyvalue"
+                    />
                   </div>
                   <div class="form-group col-md-6">
                     <div class="p-2">
                       <label class="fw-bold">Home Owned/ Rented</label>
                     </div>
-                    <select class="form-select" aria-label=".form-select-sm ">
+                    <select class="form-select" formControlName="house">
                       <option value="own">Owned</option>
                       <option value="rent">Rented</option>
                     </select>
@@ -564,7 +620,11 @@
                   <div class="form-group">
                     <div class="p-2">
                       <label class="fw-bold">Father's Bussiness</label>
-                      <input type="text" class="form-control" />
+                      <input
+                        type="text"
+                        class="form-control"
+                        formControlName="fatherjob"
+                      />
                     </div>
                   </div>
                 </div>
@@ -583,6 +643,7 @@
                         class="form-control"
                         placeholder="Leave your details here"
                         id="floatingTextarea"
+                        formControlName="familydetails"
                       ></textarea>
                     </div>
                   </div>
@@ -617,7 +678,12 @@
                         >Mobile Number</label
                       >
                     </div>
-                    <input type="number" class="form-control" id="mbnum" />
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="mbnum"
+                      formControlName="mobilenum"
+                    />
                   </div>
                   <div class="form-group col-md-6">
                     <div class="p-2">
@@ -625,7 +691,12 @@
                         >Email</label
                       >
                     </div>
-                    <input type="email" class="form-control" id="Email1" />
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="Email1"
+                      formControlName="email"
+                    />
                   </div>
                 </div>
 
@@ -638,7 +709,12 @@
                         >Contact Phone Number</label
                       >
                     </div>
-                    <input type="number" class="form-control" id="cphno" />
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="cphno"
+                      formControlName="contatctnum"
+                    />
                   </div>
                   <div class="form-group col-md-6">
                     <div class="form-group">
@@ -651,6 +727,7 @@
                           class="form-control"
                           placeholder="Leave your details here"
                           id="contactadress"
+                          formControlName="contatctaddrs"
                         ></textarea>
                       </div>
                     </div>
@@ -671,6 +748,7 @@
                       id="imageInput1"
                       accept="image/*"
                       multiple
+                      formControlName="photo1"
                     />
                   </div>
                 </div>
@@ -720,7 +798,7 @@
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="Radiooption3"
+                        formControlName="chevai"
                         id="inlineRadio31"
                         value="yes"
                       />
@@ -730,7 +808,7 @@
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="Radiooption3"
+                        formControlName="chevai"
                         id="inlineRadio32"
                         value="yes"
                       />
@@ -741,7 +819,7 @@
                     <div class="p-2">
                       <label class="fw-bold form-label">Chevvai In Place</label>
                     </div>
-                    <select class="form-select" aria-label=".form-select-sm ">
+                    <select class="form-select" formControlName="chevaiPos">
                       <option value="first">First</option>
                       <option value="second">Second</option>
                     </select>
@@ -755,7 +833,10 @@
                     <div class="p-2">
                       <label class="fw-bold">Jathagam Status</label>
                     </div>
-                    <select class="form-select" aria-label=".form-select-sm ">
+                    <select
+                      class="form-select"
+                      formControlName="jathagamstatus"
+                    >
                       <option value="CFRG">CFRG</option>
                       <option value="SM">SM</option>
                     </select>
@@ -766,7 +847,12 @@
                         >Date Registered</label
                       >
                     </div>
-                    <input type="date" class="form-control" id="regdate" />
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="regdate"
+                      formControlName="regdate"
+                    />
                   </div>
                 </div>
 
@@ -781,6 +867,7 @@
                       class="form-control"
                       placeholder="Leave your details here"
                       id="contactadress"
+                      formControlName="contactadress"
                     ></textarea>
                   </div>
                 </div>
@@ -795,7 +882,7 @@
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="Radiooption4"
+                        formControlName="payement"
                         id="inlineRadio41"
                         value="cash"
                       />
@@ -805,7 +892,7 @@
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="Radiooption4"
+                        formControlName="payement"
                         id="inlineRadio42"
                         value="chq"
                       />
@@ -818,7 +905,7 @@
                       <input
                         class="form-check-input"
                         type="radio"
-                        name="Radiooption4"
+                        formControlName="payement"
                         id="inlineRadio42"
                         value="online"
                       />
@@ -851,6 +938,7 @@
         <div [hidden]="!submitted">
           <h3>Details</h3>
           <p>Register Num: {{ registerForm.get("registerNo")?.value }}</p>
+          {{ registerForm.get("chevaiPos")?.value }}
         </div>
       </div>
     </div>

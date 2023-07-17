@@ -17,7 +17,49 @@ export class UserInformationComponent implements OnInit {
     this.registerForm = this.formBuilder.group({
       registerNo: ['', {updateOn: 'change',validators: [Validators.required] }],
       firstName: [''],
-      // Add other form controls and validators
+      fathersName:[''],
+      mothersName:[''],
+      martialStatus:[''],
+      gender:[''],
+      dob:[''],
+      age:[''],
+      religion:[''],
+      caste:[''],
+      kulam:[''],
+      kovil:[''],
+      star:[''],
+      horoscope:[''],
+      job:[''],
+      qualification:[''],
+      occupation:[''],
+      monthlyincome:[''],
+      wrkloc:[''],
+      height:[''],
+      weight:[''],
+      complexion:[''],
+      physical:[''],
+      livingplace:[''],
+      currentdistrict:[''],
+      sisdetails:[''],
+      brodetails:[''],
+      propertyvalue:[''],
+      house:[''],
+      fatherjob:[''],
+      familydetails:[''],
+      mobilenum:[''],
+      email:[''],
+      contatctnum:[''],
+      contatctaddrs:[''],
+      photo1:[''],
+      chevai:[''],
+      chevaiPos:[''],
+      jathagamstatus:[''],
+      regdate:[''],
+      contactadress:[''],
+      payement:['']
+
+
+
     });
   }
 
