@@ -1,14 +1,156 @@
-<form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input
-      type="email"
-      class="form-control"
-      id="exampleInputEmail1"
-      aria-describedby="emailHelp"
-    />
-    <div id="emailHelp" class="form-text">
-      We'll never share your email with anyone else.
-    </div>
+<section>
+  <div class="container">
+    <form [formGroup]="advancesearchform" class="border rounded p-4">
+      <div class="form-group row mb-4">
+        <label for="gender" class="col-form-label col-md-4 fw-bold"
+          >Looking For</label
+        >
+        <div class="col-md-8">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              formControlName="gender"
+              id="male"
+              value="male"
+            />
+            <label class="form-check-label" for="male">Groom</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              formControlName="gender"
+              id="female"
+              value="female"
+            />
+            <label class="form-check-label" for="female">Bride</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- second -->
+
+      <div class="form-group row mb-4">
+        <label for="ageGroup" class="col-form-label col-md-4 fw-bold"
+          >Age Group</label
+        >
+        <div class="col-md-4">
+          <select class="form-select" id="ageGroup" formControlName="agefrom">
+            <option selected>Select age from</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <!-- Add more age options here -->
+          </select>
+        </div>
+        <div class="col-md-4">
+          <select class="form-select" id="ageGroup" formControlName="ageTo">
+            <option selected>Select age to</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+            <option value="35">35</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Third -->
+
+      <div class="form-group row mb-4">
+        <label for="horoscopeCategory" class="col-form-label col-md-4 fw-bold"
+          >Horoscope Category</label
+        >
+        <div class="col-md-8">
+          <select
+            class="form-select"
+            id="horoscopeCategory"
+            formControlName="horoscope"
+          >
+            <option selected>Select horoscope category</option>
+            <option value="category1">Category 1</option>
+            <option value="category2">Category 2</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- fourth -->
+
+      <div class="form-group row mb-4">
+        <label for="recentprofile" class="col-form-label col-md-4 fw-bold"
+          >Recent Profile</label
+        >
+        <div class="col-md-8">
+          <select
+            class="form-select"
+            id="recentprofile"
+            formControlName="recentprofile"
+          >
+            <option selected>No Need</option>
+            <option value="category1">Category 1</option>
+            <option value="category2">Category 2</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Fifth -->
+
+      <div class="form-group row mb-4">
+        <label for="livingdisrict" class="col-form-label col-md-4 fw-bold"
+          >Living District</label
+        >
+        <div class="col-md-8">
+          <select
+            class="form-select"
+            id="livingdisrict"
+            formControlName="district"
+          >
+            <option selected>No Need</option>
+            <option value="category1">Category 1</option>
+            <option value="category2">Category 2</option>
+          </select>
+        </div>
+      </div>
+      <!-- Sixth -->
+
+      <div class="form-group row mb-4">
+        <label for="job" class="col-form-label col-md-4 fw-bold"
+          >Type Doctor/ Engineer</label
+        >
+        <div class="col-md-8">
+          <select class="form-select" id="job" formControlName="job">
+            <option selected>No Need</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Enginner">Enginner</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Seventh -->
+
+      <div class="form-group row mb-4">
+        <label for="martialstatus" class="col-form-label col-md-4 fw-bold"
+          >Martial Status</label
+        >
+        <div class="col-md-8">
+          <select
+            class="form-select"
+            id="martialstatus"
+            formControlName="martialstatus"
+          >
+            <option selected>No Need</option>
+            <option value="Married">Married</option>
+            <option value="UnMarried">UnMarried</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="justify-content-center d-flex">
+          <button class="btn btn-secondary col-md-8" type="submit">
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
   </div>
-</form>
+</section>

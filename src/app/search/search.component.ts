@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-search',
@@ -7,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  advancesearchform!:FormGroup;
+
+  constructor(private formbuilder:FormBuilder) { }
 
   ngOnInit(): void {
+
+    this.advancesearchform=this.formbuilder.group(
+      {
+        gender: [''],
+        agefrom:[''],
+        ageTo:[''],
+        horoscope:[''],
+        recentprofile:[''],
+        district:[''],
+        job:[''],
+
+        martialstatus:['']
+
+      }
+    );
   }
+
 
 }
