@@ -1,6 +1,8 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
+import { UserInformationComponent } from './user-information/user-information.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   
@@ -12,6 +14,16 @@ const routes: Routes = [
     {
       path: 'main',
       component:MainComponent
+    }
+    ,
+    {
+      path: 'newUser',
+      component:UserInformationComponent
+    }
+    ,
+    {
+      path:'search',
+      component:SearchComponent
     }
     
  
