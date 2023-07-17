@@ -10,6 +10,7 @@ import { MainComponent } from './main/main.component';
 import { Routes } from '@angular/router';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { SearchComponent } from './search/search.component';
 
 const appRoutes: Routes = [
   
@@ -27,6 +28,7 @@ const appRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
     MainComponent,
+    SearchComponent,
    
   ],
   imports: [
