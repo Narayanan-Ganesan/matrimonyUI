@@ -15,7 +15,7 @@ export class UserInformationComponent implements OnInit {
   ngOnInit(): void {
 
     this.registerForm = this.formBuilder.group({
-      registerNo: ['', {updateOn: 'change',validators: [Validators.required] }],
+      registerNo: [''],
       firstName: [''],
       fathersName:[''],
       mothersName:[''],
@@ -46,8 +46,8 @@ export class UserInformationComponent implements OnInit {
       house:[''],
       fatherjob:[''],
       familydetails:[''],
-      mobilenum:[''],
-      email:[''],
+      mobilenum:['',{updateOn: 'change',validators: [Validators.required,Validators.pattern("[0-9]{10}$")]}],
+      email:['',{updateOn: 'change',validators: [Validators.required,Validators.email]}],
       contatctnum:[''],
       contatctaddrs:[''],
       photo1:[''],
