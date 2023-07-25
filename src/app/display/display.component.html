@@ -1,0 +1,70 @@
+<div class="container-fluid page-header py-3 mb-3">
+  <div class="container text-center py-3">
+    <h3 class="display-3 text-light mb-3">Search</h3>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-center mb-0">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+        <li class="breadcrumb-item text-light" aria-current="page">About</li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="row my-3">
+    <div class="col-md-3">
+      <label for="occupationFilter" class="form-label"
+        >Filter by Occupation:</label
+      >
+      <select
+        class="form-select"
+        id="occupationFilter"
+        [(ngModel)]="selectedOccupation"
+        (change)="applyFilters()"
+      >
+        <option value="">All Occupations</option>
+        <option value="Software Engineer">Software Engineer</option>
+        <option value="Business Analyst">Business Analyst</option>
+        <!-- Add more occupation options here -->
+      </select>
+    </div>
+
+    <div class="col-md-3">
+      <label for="ageRangeFilter" class="form-label"
+        >Filter by Age Range:</label
+      >
+      <select
+        class="form-select"
+        id="ageRangeFilter"
+        [(ngModel)]="selectedAgeRange"
+        (change)="applyFilters()"
+      >
+        <option value="">All Ages</option>
+        <option value="18-25">18 - 25</option>
+        <option value="26-35">26 - 35</option>
+        <!-- Add more age range options here -->
+      </select>
+    </div>
+  </div>
+</div>
+<!-- <h4>hello{{ selectedAgeRange.split("-")[0] }} {{ selectedOccupation }}</h4> -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 mx-auto my-5" *ngFor="let card of filteredUsers">
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://images.pexels.com/photos/1925482/pexels-photo-1925482.jpeg?auto=compress&cs=tinysrgb&w=600"
+          class="card-img-top"
+          alt="Profile Image"
+          height="250px"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ card.full_name }}</h5>
+          <p class="card-text">Age: {{ card.age }}</p>
+          <p class="card-text">District : {{ card.district }}</p>
+          <p class="card-text">Job : {{ card.occupation }}</p>
+          <a href="#" class="btn btn-primary">View Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
